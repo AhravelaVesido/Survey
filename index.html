@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <meta name="viewport">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arduino Form</title>
+</head>
+<body>
+<form id="survey-form">
+   <h1 id="title">Arduino Project </h1>
+    <p id="description">Thank you for expressing your ideas with us.</p>
+
+  <fieldset>
+    <legend>Kindly answer from top to bottom.</legend>
+      <label for="name" id="name-label">Name <input id="name" type="text" required placeholder=" Enter your name"/></label>
+      <label for="email" id="email-label"> Email <input id="email" type="email" required placeholder="Enter your email"/></label>
+      <label for="number" id="number-label">Age <input id="number" type="number" required min="14" max="120" placeholder="Enter your number"/></label>
+   
+    <select id="dropdown">
+            <option>Select</option>
+            <option>Under 18</option>
+            <option> Over 30</option>
+    </select>
+    </fieldset>
+    <fieldset>
+      <p>I will recommend Arduino Project.</p>
+      <label>Yes<input type="radio" name="answer" value="yes"/></label
+      <label>No<input type="radio" name="answer" value="no"/></label>
+  </fieldset>    
+  <fieldset> 
+      <p>What do you like about Arduino Project?</p>
+      <label><input/ type="checkbox" name="likes" value="ease of use" >Ease of Use</label>
+      <label><input/ type="checkbox" value="creativity" name="likes" >Creativity</label>
+      <label><input/ type="checkbox" value="versatility" name="likes" >Versatility</label>
+      <label><input/ type="checkbox" value="learning experience" name="likes" >Learning Experience</label>
+      <label><input/ type="checkbox" value="community support" name="likes" >Community Support</label>
+      <label><input/ type="checkbox" value="open-source" name="likes" >Open-source</label>
+      <label><input/ type="checkbox" value="others" name="likes" >Others</label>
+
+    <label>
+        <p> Feedbacks are highly encouraged. </p>
+        <textarea name="feedback" cols="50" rows="4" placeholder="Write your thoughts here." required></textarea>
+    </label>
+    <input id="submit" type="submit" value="submit"/>
+  </fieldset>
+
+</form>
+
+</body>
+
+</html>
